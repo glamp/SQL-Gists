@@ -1,1 +1,1 @@
-select * from beer_reviews limit 1000;
+select 1 as hello;
