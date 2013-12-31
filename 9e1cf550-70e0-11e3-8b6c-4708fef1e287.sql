@@ -1,1 +1,0 @@
-select * from beer_reviews limit 1000;
