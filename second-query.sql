@@ -12,7 +12,7 @@ days = (select distinct created_date as ith_day from sample_days)
 select
     name
     , address
-    , {{ . }} as day_n
+    , {{ ith_day }} as day_n
 from
     foo;
 {{/days}}
