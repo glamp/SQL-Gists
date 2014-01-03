@@ -9,7 +9,7 @@ select
 from
     users
 where
-    created_date > '{{ ith_day }}'::date
+    created_date > '{{ ith_day }}'::date;
 {{/days}}
 
 stuffs = (select distinct name as human_name, created_date as ith_day from users)
