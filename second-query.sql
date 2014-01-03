@@ -1,12 +1,12 @@
 days = (select distinct created_date as ith_day from users)
 --OR--
-days = ('2013-01-01', '2013-06-01', '2013-12-01')
+days = ['2013-01-01', '2013-06-01', '2013-12-01']
 
 {{#days}}
 select
     name
     , address
-    , {{ ith_day }} as day_n
+    , {{ . }} as day_n
 from
     foo;
 {{/days}}
