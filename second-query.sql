@@ -17,9 +17,11 @@ stuffs = (select distinct name as human_name, created_date as ith_day from users
 
 {{#stuffs}}
 select
-    '{{ human_name }}'
-    , '{{ ith_day }}'
+    '{{ human_name }}' as human_name
+    , '{{ ith_day }}' as ith_day
     , address
 from
-    users;
+    users
+where
+    name = '{{ human_name }}';
 {{/stuffs}}
