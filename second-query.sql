@@ -16,7 +16,7 @@ where
 {{/days}}
 
 
--- another example
+-- another example with multiple variables
 stuffs = (select distinct name as human_name, created_date as ith_day from users)
 
 {{#stuffs}}
