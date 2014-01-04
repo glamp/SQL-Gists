@@ -2,4 +2,4 @@ select
     *
 from
     beer_reviews b
-limit 200;
+limit 1000;
