@@ -13,6 +13,8 @@ where
     created_date > '{{ ith_day }}'::date;
 {{/days}}
 
+
+-- another example
 stuffs = (select distinct name as human_name, created_date as ith_day from users)
 
 {{#stuffs}}
