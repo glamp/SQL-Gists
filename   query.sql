@@ -2,5 +2,6 @@ select
     *
 from
     beer_reviews b
-order by random()
+where    
+    b.review_profilename ilike '%greg%'
 limit 1000;
