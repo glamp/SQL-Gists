@@ -1,7 +1,7 @@
-select
+SELECT
     *
-from
+FROM
     beer_reviews b
-where
+WHERE
     b.review_profilename ilike '%greg%'
-limit 1000;
+LIMIT 1000; 
